@@ -1,5 +1,5 @@
-ELK on Ubuntu Quick Install
----------------------------
+#ELK on Ubuntu Quick Install
+#---------------------------
 #Elasticsearch
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 sudo apt-get update
