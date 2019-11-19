@@ -1,4 +1,4 @@
-# elk-filebeat
+
 # basic elk + filebeat setup on ubuntu
 
 #install elasticsearch
@@ -11,7 +11,7 @@ sudo /bin/systemctl enable elasticsearch.service
 # To start:
 sudo systemctl start elasticsearch.service
 # To stop:
-sudo systemctl stop elasticsearch.service
+# sudo systemctl stop elasticsearch.service
 # To check if elasticsearch is running:
 curl -X GET "localhost:9200/?pretty"
 # install kibana
@@ -20,15 +20,16 @@ shasum -a 512 kibana-7.4.2-amd64.deb
 sudo dpkg -i kibana-7.4.2-amd64.deb
 sudo /bin/systemctl daemon-reload
 sudo /bin/systemctl enable kibana.service
-#To start:
+# To start:
 sudo systemctl start kibana.service
 
-#To stop:
-sudo systemctl stop kibana.service
+# To stop:
+# sudo systemctl stop kibana.service
 
 # config file:
-/etc/kibana/kibana.yml
-install logstash
+# /etc/kibana/kibana.yml
+
+#install logstash
 wget https://artifacts.elastic.co/downloads/logstash/logstash-7.4.2-amd64.deb
 shasum -a 512 logstash-7.4.2-amd64.deb 
 sudo dpkg -i logstash-7.4.2-amd64.deb
