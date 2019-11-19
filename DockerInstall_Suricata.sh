@@ -8,4 +8,5 @@ service docker start
 pip install docker-compose
 
 git clone https://github.com/malinkinsa/Docker-Compose-Suricata
-docker-compose up
+cd Docker-Compose-Suricata
+docker-compose up 
